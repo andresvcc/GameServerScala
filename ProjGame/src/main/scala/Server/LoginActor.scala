@@ -16,7 +16,7 @@ class LoginActor extends Actor {
     case Connecting(name,senderName) =>
       if(connectingUser(name, senderName)){
         println("User Connect:" + name +": "+ senderName)
-        sendMessage(senderName,"you are is now connected\n",serverMessage = true)
+        sendMessage(senderName,"you are is now connected",serverMessage = true)
         sendToAll("", name+" is connected", serverMessage = true)
       }
     // en el caso de perder la conexion, se suprime de la lista de usuarios conectados
