@@ -15,7 +15,7 @@ class LoginActor extends Actor {
     // en el caso de recibir una solisitud de conexion
     case Connecting(name,senderName) =>
       if(connectingUser(name, senderName)){
-        println("User Connect:" + name +": "+ senderName)
+        println("#login User Name:" + name +" -> userID"+ senderName)
         sendMessage(senderName,"you are is now connected",serverMessage = true)
         sendToAll("", name+" is connected", serverMessage = true)
       }
