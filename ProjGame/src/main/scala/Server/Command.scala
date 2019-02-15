@@ -76,7 +76,20 @@ case object Command{
         actorRef ! Write(ByteString(message))
       }
     }else{
-      println("user no found")
+      println("user no found "+clientActorName)
+    }
+  }
+
+  def sendMessageName(name: String, message: String, serverMessage: Boolean = false): Unit = {
+    val actorRef = getActorRefByName(BdClient.findSenderIdentities(name))
+    if(actorRef != null){
+      if (serverMessage) {
+        actorRef ! Write(ByteString("[SERVER]: " + message))
+      } else {
+        actorRef ! Write(ByteString(message))
+      }
+    }else{
+      println("user no found "+name)
     }
   }
 

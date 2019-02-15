@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="" />
+    <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/BdClient.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/BdClient.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/InfoPlayerActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/InfoPlayerActor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcHandler$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcHandler$$anonfun$receive$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdClient$$anonfun$findNameIdentities$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdClient$$anonfun$findSenderIdentities$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdClient$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdClient$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/InfoPlayerActor$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/InfoPlayerActor$$anonfun$receive$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/InfoPlayerActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/InfoPlayerActor.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -43,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="-110">
               <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="80" />
               <folding>
                 <element signature="e#212#228#0" expanded="true" />
@@ -52,13 +64,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Server/InfoPlayerActor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="154">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#449#469#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="572">
+              <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#122#145#0" expanded="true" />
@@ -79,10 +92,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Command.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/BdClient.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
-              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="312">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -90,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/BdClient.scala">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Command.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="77" column="25" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="25" />
+            <state relative-caret-position="308">
+              <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -171,15 +184,15 @@
         <option value="$PROJECT_DIR$/src/main/scala/Server/TCPConnectionHandler.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/Server.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/LoginActors.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Server/BdClient.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/LoginServer.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcManager.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/SelecPlayerActor.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Server/Command.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/Comunicated.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Server/BdClient.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/InfoPlayerActor.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Server/Command.scala" />
       </list>
     </option>
   </component>
@@ -245,7 +258,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550239245628" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550240376911" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -535,13 +548,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.25637585" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="1" />
@@ -550,7 +562,7 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.407932" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.407932" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39943343" />
       <window_info anchor="bottom" id="Build" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -844,38 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Command.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/BdClient.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="77" column="25" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#122#145#0" expanded="true" />
-            <element signature="e#248#264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginServer.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -895,7 +875,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="-110">
           <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="80" />
           <folding>
             <element signature="e#212#228#0" expanded="true" />
@@ -905,8 +885,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/InfoPlayerActor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="154">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#449#469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#122#145#0" expanded="true" />
+            <element signature="e#248#264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/BdClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Command.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

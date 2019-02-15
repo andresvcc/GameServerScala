@@ -22,7 +22,9 @@ class ActorTCPcHandler(arg:String) extends Actor {
               loginActor1 ! Connecting(cmd(1), sender.path.name)
             else sendMessage(sender.path.name,"the username is not correct")
         case "~info" =>
-            infoPlayerActor ! InfoPlayer(BdClient.findNameIdentities(sender.path.name))
+          val name = BdClient.findNameIdentities(sender.path.name)
+          if(name == "null") sendMessage(sender.path.name,"your are not login")
+          else infoPlayerActor ! InfoPlayer(name)
         case _ =>
             sendMessage(sender.path.name,"Command "+cmd(0)+" not found")
         }

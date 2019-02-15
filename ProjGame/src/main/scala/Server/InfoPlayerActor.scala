@@ -10,11 +10,11 @@ import akka.actor.Actor
 
 class InfoPlayerActor extends Actor { //para usar las clase de mensajes Connecting y Disconnect
   import Comunicated._
+  import Command._
   def receive:Receive = {
     // en el caso de recibir una solisitud de conexion
-    case InfoPlayer(name) =>
-    // buscar la informacion del jugador y enviarsela
-
+    case InfoPlayer(name) => // buscar la informacion del jugador y enviarsela
+      sendMessageName(name,"your info 0000000000")
     case _ => println("huh type command?")
   }
 }

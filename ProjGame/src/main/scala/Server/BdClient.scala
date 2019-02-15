@@ -71,11 +71,15 @@ case object BdClient {
 
   //recibe el name de un usuario y retorna el senderName
   def findSenderIdentities(name:String): String ={
-    ClientIdentities.getOrElse(name, null)
+    val senderName = ClientIdentities.getOrElse(name, null)
+    if(senderName == null) "null"
+    else senderName
   }
 
   //recibe el senderName de un usuario y retorna el name
   def findNameIdentities(senderName:String): String ={
-    ClientIdentities2.getOrElse(senderName, null)
+    val name = ClientIdentities2.getOrElse(senderName, null)
+    if(name == null) "null"
+    else name
   }
 }
