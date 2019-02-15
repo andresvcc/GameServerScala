@@ -3,21 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Connecting$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Connecting$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Connecting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Connecting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Disconnect$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Disconnect$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Disconnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Disconnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Greeting$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Greeting$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Greeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Greeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginActor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginServer$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginServer$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginServer$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginServer$delayedInit$body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/playServer$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/playServer.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,7 +69,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Command.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1336">
+            <state relative-caret-position="154">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -252,7 +237,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550225804663" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550226378216" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -418,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550225406248</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="aqui agregué comentarios a el objeto Command">
+      <created>1550226306336</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550226306336</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -486,7 +478,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test 1" />
     <MESSAGE value="aqui he revisado los mensajes de login y las respuestas que envia el server" />
-    <option name="LAST_COMMIT_MESSAGE" value="aqui he revisado los mensajes de login y las respuestas que envia el server" />
+    <MESSAGE value="aqui agregué comentarios a el objeto Command" />
+    <option name="LAST_COMMIT_MESSAGE" value="aqui agregué comentarios a el objeto Command" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar!/scala/App.scala">
@@ -764,7 +757,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Command.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1336">
+        <state relative-caret-position="154">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
