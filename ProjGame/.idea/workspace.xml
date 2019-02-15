@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Server/InfoPlayerActor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/Comunicated.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Comunicated.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcHandler$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcHandler$$anonfun$receive$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginActor$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginActor$$anonfun$receive$1.class" afterDir="false" />
-    </list>
+    <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -255,7 +245,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550239150128" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550239245628" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -519,7 +509,28 @@
       <option name="project" value="LOCAL" />
       <updated>1550232907765</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="agregando el comando ~info, un actor para buscar la informacion y el mensaje InfoPlayer">
+      <created>1550239084997</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1550239084997</updated>
+    </task>
+    <task id="LOCAL-00018" summary="agregando el comando ~info, un actor para buscar la informacion y el mensaje InfoPlayer">
+      <created>1550239094657</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1550239094657</updated>
+    </task>
+    <task id="LOCAL-00019" summary="agregando el comando ~info, un actor para buscar la informacion y el mensaje InfoPlayer">
+      <created>1550239152772</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1550239152772</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -596,7 +607,8 @@
     <MESSAGE value="simple test" />
     <MESSAGE value="simple test 2" />
     <MESSAGE value="simple test 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple test 3" />
+    <MESSAGE value="agregando el comando ~info, un actor para buscar la informacion y el mensaje InfoPlayer" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregando el comando ~info, un actor para buscar la informacion y el mensaje InfoPlayer" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar!/scala/App.scala">
