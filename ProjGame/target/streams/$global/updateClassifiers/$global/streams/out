@@ -1516,21 +1516,21 @@
 [debug] == resolving dependencies example.server#server$sources;1.0->jline#jline;2.12.1 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.12!akka-actor_2.11.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.7!scala-library.jar(src)
-[debug] 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-http-core-experimental_2.11;2.0.2!akka-http-core-experimental_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe#ssl-config-akka_2.11;0.1.0!ssl-config-akka_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe#ssl-config-core_2.11;0.1.0!ssl-config-core_2.11.jar(src)
+[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.12!akka-actor_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-stream-experimental_2.11;2.0.2!akka-stream-experimental_2.11.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.akka#akka-parsing-experimental_2.11;2.0.2!akka-parsing-experimental_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.0!reactive-streams.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar(src)
-[debug] 	[NOT REQUIRED] com.typesafe.akka#akka-http-core-experimental_2.11;2.0.2!akka-http-core-experimental_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.12.1!jline.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.reactivestreams#reactive-streams;1.0.0!reactive-streams.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.7!scala-reflect.jar(src)
-[debug] :: resolution report :: resolve 70ms :: artifacts dl 4ms
+[debug] :: resolution report :: resolve 159ms :: artifacts dl 5ms
 [debug] 	report for example.server#server$sources;1.0 compile produced in C:\Users\andre\Documents\ProjectScala\GameServerScala\ProjGame\target\scala-2.11\resolution-cache\reports\example.server-server$sources-compile.xml
 [debug] 	report for example.server#server$sources;1.0 runtime produced in C:\Users\andre\Documents\ProjectScala\GameServerScala\ProjGame\target\scala-2.11\resolution-cache\reports\example.server-server$sources-runtime.xml
 [debug] 	report for example.server#server$sources;1.0 test produced in C:\Users\andre\Documents\ProjectScala\GameServerScala\ProjGame\target\scala-2.11\resolution-cache\reports\example.server-server$sources-test.xml
@@ -1542,4 +1542,4 @@
 [debug] 	report for example.server#server$sources;1.0 plugin produced in C:\Users\andre\Documents\ProjectScala\GameServerScala\ProjGame\target\scala-2.11\resolution-cache\reports\example.server-server$sources-plugin.xml
 [debug] 	report for example.server#server$sources;1.0 pom produced in C:\Users\andre\Documents\ProjectScala\GameServerScala\ProjGame\target\scala-2.11\resolution-cache\reports\example.server-server$sources-pom.xml
 [debug] 	report for example.server#server$sources;1.0 scala-tool produced in C:\Users\andre\Documents\ProjectScala\GameServerScala\ProjGame\target\scala-2.11\resolution-cache\reports\example.server-server$sources-scala-tool.xml
-[debug] 	resolve done (70ms resolve - 4ms download)
+[debug] 	resolve done (159ms resolve - 5ms download)

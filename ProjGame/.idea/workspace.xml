@@ -170,7 +170,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550181005314" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550222910828" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -203,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ClientMain">
+  <component name="RunManager" selected="Application.LoginServer (1)">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Client.Client" />
       <module name="Server" />
@@ -259,9 +259,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoginServer (1)" />
         <item itemvalue="Application.ClientMain" />
         <item itemvalue="Application.ClientMain2" />
-        <item itemvalue="Application.LoginServer (1)" />
         <item itemvalue="Application.LoginServer" />
         <item itemvalue="Application.Client" />
       </list>

@@ -4,7 +4,7 @@
 		module="server$sbt_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20190214222804"
+		publication="20190215102651"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
