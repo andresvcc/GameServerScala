@@ -10,12 +10,12 @@ case object Command{
   val CommandCharacter = "~"
   val system = ActorSystem("serverCOM")
   // default Actor constructor
-  val loginActor1 = system.actorOf(Props[LoginActor], name = "loginActor1")
+  val loginActor1: ActorRef = system.actorOf(Props[LoginActor], name = "loginActor1")
 
 
   //-----------------------------------------
   def getCommand(command:String):Array[String] = {
-    return command.split(" ")
+    command.split(" ")
   }
 
   def isCommand(message: String): Boolean = {
@@ -44,7 +44,7 @@ case object Command{
       BdClient.supActiveClient(senderName)
       true
     } else {
-      println("not user in activeClient!\n")
+      println("not user in activeClient!")
       false
     }
   }
@@ -53,7 +53,7 @@ case object Command{
     BdClient.findActiveClient(name)
   }
 
-  def sendMessage(clientActorName: String, message: String, serverMessage: Boolean = false) = {
+  def sendMessage(clientActorName: String, message: String, serverMessage: Boolean = false): Unit = {
     val actorRef = getActorRefByName(clientActorName)
     if(actorRef != null){
       if (serverMessage) {
@@ -66,11 +66,11 @@ case object Command{
     }
   }
 
-  def sendToAll(messageSender: String, message: String, serverMessage: Boolean = false) = {
+  def sendToAll(messageSender: String, message: String, serverMessage: Boolean = false): Unit = {
     if (serverMessage) {
-      BdClient.allActorRef.foreach(actorRef => actorRef ! Write(ByteString("[SERVER]: " + message)))
+      BdClient.allActorRef().foreach(actorRef => actorRef ! Write(ByteString("[SERVER for ALL]: " + message)))
     } else {
-      BdClient.allActorRef.foreach(actorRef => actorRef ! Write(ByteString("<" + messageSender + ">: " + message)))
+      BdClient.allActorRef().foreach(actorRef => actorRef ! Write(ByteString("<" + messageSender + ">: " + message)))
     }
   }
 }

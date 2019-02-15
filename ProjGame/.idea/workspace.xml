@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="" />
+    <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="aqui he revisado los mensajes de login y las respuestas que envia el server">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/LoginActors.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/Server.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/LoginServer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/caseClassScripts.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Comunicated.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcHandler$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcHandler$$anonfun$receive$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command$$anonfun$sendToAll$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command$$anonfun$sendToAll$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginActor$$anonfun$receive$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginActor$$anonfun$receive$1.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -18,24 +29,81 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Server.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginServer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="220">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Client/ClientMain.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-534">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+              <folding>
+                <element signature="e#16#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Client/client.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="14" />
+              <folding>
+                <element signature="e#33#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+              <folding>
+                <element signature="e#16#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/Client/ClientMain.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Command.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-302">
-              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="280">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
               <folding>
-                <element signature="e#16#49#0" expanded="true" />
+                <element signature="e#17#65#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+              <folding>
+                <element signature="e#76#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Comunicated.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -72,6 +140,9 @@
       <replace>actor2</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -101,11 +172,14 @@
         <option value="$PROJECT_DIR$/src/main/scala/Server/Actors.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/TCPConnectionManager.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/caseClassScripts.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Server/LoginActors.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/BdClient.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/TCPConnectionHandler.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Server/Command.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/Server.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Server/LoginActors.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Server/LoginServer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Server/Command.scala" />
       </list>
     </option>
   </component>
@@ -115,11 +189,14 @@
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,12 +242,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550222910828" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550225397848" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -203,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LoginServer (1)">
+  <component name="RunManager" selected="Application.ClientMain2">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Client.Client" />
       <module name="Server" />
@@ -259,9 +334,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LoginServer (1)" />
         <item itemvalue="Application.ClientMain" />
         <item itemvalue="Application.ClientMain2" />
+        <item itemvalue="Application.LoginServer (1)" />
         <item itemvalue="Application.LoginServer" />
         <item itemvalue="Application.Client" />
       </list>
@@ -322,22 +397,31 @@
       <option name="presentableId" value="Default" />
       <updated>1550069010996</updated>
     </task>
+    <task id="LOCAL-00001" summary="test 1">
+      <created>1550222973762</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550222973763</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.25302014" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Messages" order="4" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.407932" />
@@ -384,6 +468,11 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test 1" />
+    <MESSAGE value="aqui he revisado los mensajes de login y las respuestas que envia el server" />
+    <option name="LAST_COMMIT_MESSAGE" value="aqui he revisado los mensajes de login y las respuestas que envia el server" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar!/scala/App.scala">
@@ -581,10 +670,41 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/comand.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#16#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/BdClient.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Client/ClientActor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
+        <state relative-caret-position="572">
           <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Comunicated.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginServer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -598,45 +718,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Client/ClientMain.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-          <folding>
-            <element signature="e#16#39#0" expanded="true" />
-            <element signature="e#146#162#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcManager.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="-534">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding>
             <element signature="e#16#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/caseClassScripts.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="286">
+          <caret line="14" column="53" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+          <folding>
+            <element signature="e#16#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/BdClient.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginActors.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="362">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding>
             <element signature="e#76#92#0" expanded="true" />
           </folding>
@@ -645,27 +750,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Command.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-718">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="280">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="e#17#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Server.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Client/ClientMain.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-302">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="e#16#49#0" expanded="true" />
           </folding>
         </state>
       </provider>

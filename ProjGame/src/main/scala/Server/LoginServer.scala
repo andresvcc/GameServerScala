@@ -7,8 +7,4 @@ object LoginServer extends App {
   val tcpserver = system.actorOf(Props(classOf[ActorTCPcManager], "localhost", 8080))
 }
 
-object playServer extends App{
-
-}
-
 

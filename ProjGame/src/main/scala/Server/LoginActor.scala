@@ -9,14 +9,14 @@ class LoginActor extends Actor {
     case Connecting(name,senderName) =>
       if(connectingUser(name, senderName)){
         println("User Connect:" + name +": "+ senderName)
-        sendMessage(senderName,"you are is now connected\n",true)
-        sendToAll("", name+" is connected\n", true)
+        sendMessage(senderName,"you are is now connected\n",serverMessage = true)
+        sendToAll("", name+" is connected", serverMessage = true)
       }
     case Disconnect(senderName)=>
       val name = BdClient.findNameIdentities(senderName)
       if(disconnectUser(senderName)){
         println("User Disconnect: "+name+": "+ senderName)
-        sendToAll("", name+" is disconnect\n", true)
+        sendToAll("", name+" is disconnect§", serverMessage = true)
       }
     case _ => println("huh type command?")
   }
