@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcManager.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcManager.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,15 +42,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcManager.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="198">
               <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#247#280#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -127,9 +136,9 @@
         <option value="$PROJECT_DIR$/src/main/scala/Server/BdClient.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/Comunicated.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/LoginServer.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcManager.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala" />
       </list>
     </option>
   </component>
@@ -195,11 +204,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550231942902" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550232435374" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -389,7 +398,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550230596050</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="correcion de la linea 25 en ActorTCPcManager, remote ahora se envia como string">
+      <created>1550231937167</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1550231937167</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ls linea 19, ya no envia un mensaje con retorno a la linea, es simplemente estetico">
+      <created>1550232123375</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1550232123375</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -401,14 +424,14 @@
       <window_info id="Image Layers" order="3" />
       <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.25637585" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.407932" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.407932" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39943343" />
       <window_info anchor="bottom" id="Build" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -460,7 +483,9 @@
     <MESSAGE value="aqui agregué comentarios a el BdClient" />
     <MESSAGE value="aqui agregué comentarios a Comunicated" />
     <MESSAGE value="mas comentarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="mas comentarios" />
+    <MESSAGE value="correcion de la linea 25 en ActorTCPcManager, remote ahora se envia como string" />
+    <MESSAGE value="ls linea 19, ya no envia un mensaje con retorno a la linea, es simplemente estetico" />
+    <option name="LAST_COMMIT_MESSAGE" value="ls linea 19, ya no envia un mensaje con retorno a la linea, es simplemente estetico" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar!/scala/App.scala">
@@ -675,13 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -743,12 +761,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ActorTCPcManager.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="198">
           <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#247#280#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
         </state>
       </provider>
     </entry>
