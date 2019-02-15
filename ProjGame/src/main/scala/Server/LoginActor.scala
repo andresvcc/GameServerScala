@@ -29,6 +29,3 @@ class LoginActor extends Actor {
     case _ => println("huh type command?")
   }
 }
-
-
-//dsvf
