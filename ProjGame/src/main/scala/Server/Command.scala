@@ -1,5 +1,10 @@
-package Server
+/*
+este objeto pertenece a un conjunto de metodos del projecto GameServer en scala
+contiene los metodos publica que usan los actores y tambien informaciones necesarias
+para el funcionamiento de varias clases
+*/
 
+package Server
 
 import akka.actor.{ActorRef, ActorSystem, Props}
 import akka.io.Tcp.Write
@@ -7,21 +12,26 @@ import akka.util.ByteString
 
 case object Command{
   //-----------------------------------------
+  // caracter usado para iniciar cualquier comando, es solo para verificar.
   val CommandCharacter = "~"
-  val system = ActorSystem("serverCOM")
-  // default Actor constructor
-  val loginActor1: ActorRef = system.actorOf(Props[LoginActor], name = "loginActor1")
-
-
   //-----------------------------------------
+  // default Actor constructor
+  val system = ActorSystem("serverCOM")
+  val loginActor1: ActorRef = system.actorOf(Props[LoginActor], name = "loginActor1")
+  //-----------------------------------------
+
+  //***********************************************************************************
+  //extrae el comando de una linea de string Ex: ~login andres -> return ~login.
   def getCommand(command:String):Array[String] = {
     command.split(" ")
   }
 
+  //determina si una linea de string es un comando.
   def isCommand(message: String): Boolean = {
     message.startsWith(CommandCharacter)
   }
 
+  //ayade los identificadores de un usuario a BdClient.
   def connectingUser(name:String, senderName:String): Boolean ={
 
     if(BdClient.senderExistsIdentities(senderName)){
@@ -36,6 +46,7 @@ case object Command{
     }
   }
 
+  //elimina los identificadores de un usuario de BdClient.
   def disconnectUser(senderName:String): Boolean ={
     BdClient.findActiveClient(senderName)
     BdClient.supActiveClient(senderName)
@@ -49,10 +60,12 @@ case object Command{
     }
   }
 
+  //recive el nombre de usuario y retorna el ActorRef ligado a ese usuario.
   def getActorRefByName(name: String): ActorRef = {
     BdClient.findActiveClient(name)
   }
 
+  //envia un mensaje TCP/ip a un usuario.
   def sendMessage(clientActorName: String, message: String, serverMessage: Boolean = false): Unit = {
     val actorRef = getActorRefByName(clientActorName)
     if(actorRef != null){
@@ -66,6 +79,7 @@ case object Command{
     }
   }
 
+  //envia un mensaje TCP/ip a todos los usuarios.
   def sendToAll(messageSender: String, message: String, serverMessage: Boolean = false): Unit = {
     if (serverMessage) {
       BdClient.allActorRef().foreach(actorRef => actorRef ! Write(ByteString("[SERVER for ALL]: " + message)))
