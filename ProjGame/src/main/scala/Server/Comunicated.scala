@@ -1,3 +1,7 @@
+/*
+en este objeto se definen las classes de mensaje usados por los actores
+*/
+
 package Server
 
 case object Comunicated {
