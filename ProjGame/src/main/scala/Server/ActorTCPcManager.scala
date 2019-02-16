@@ -19,14 +19,12 @@ class ActorTCPcManager(address: String, port: Int) extends Actor {
   override def receive: Receive = {
     case Bound(local) =>
       println(s"Server started on $local")
-    // en el caso de recibir una conexion
-    case Connected(remote, local) =>
+    case Connected(remote, local) => // en el caso de recibir una conexion
       // handler es una instancia del modelo ActorTCPcHandler
       val handler = context.actorOf(Props(classOf[ActorTCPcHandler], s"$remote"))
       println(s"New connection: $local -> $remote")
-      // se agrega el nuevo usuario a la lista de usuarios sin identificar
       // en este contexto sender es el ActorRef  y sender.path.name es el identificador de conexion de usuario
-      BdClient.addActiveClient(sender.path.name, sender)
+      BdClient.addActiveClient(sender.path.name, sender) // se agrega el nuevo usuario a la lista de usuarios activos
       println("path name: "+sender.path.name +" ->  ActorRef"+ sender)
       // se envia el mensaje a sender() del protocolo TCP/ip para delegar la gestion de esta conexion a el Actor handler
       sender() ! Register(handler)
