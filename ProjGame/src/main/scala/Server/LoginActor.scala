@@ -13,15 +13,15 @@ class LoginActor extends Actor {
   import Comunicated._ //para usar las clase de mensajes Connecting y Disconnect
   def receive:Receive = {
     // en el caso de recibir una solisitud de conexion
-    case Connecting(name,senderName) =>
-      if(connectingUser(name, senderName)){
+    case Connecting(name,senderName,host) =>
+      if(connectingUser(name, senderName,host)){
         println("#login User Name:" + name +" -> userID"+ senderName)
-        sendMessage(senderName,"you are is now connected",serverMessage = true)
+        sendMessageBySender(senderName,"you are is now connected",serverMessage = true)
         sendToAll("", name+" is connected", serverMessage = true)
       }
     // en el caso de perder la conexion, se suprime de la lista de usuarios conectados
     case Disconnect(senderName)=>
-      val name = BdClient.findNameIdentities(senderName)
+      val name = BdPlayerTempConnect.playerNameBySender(senderName)
       if(disconnectUser(senderName)){
         println("User Disconnect: "+name+": "+ senderName)
         sendToAll("", name+" is disconnect§", serverMessage = true)

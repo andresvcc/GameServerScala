@@ -33,42 +33,35 @@ case object Command{
   }
 
   //ayade los identificadores de un usuario a BdClient.
-  def connectingUser(name:String, senderName:String): Boolean ={
+  def connectingUser(name:String, senderName:String, host:String): Boolean ={
 
-    if(BdClient.senderExistsIdentities(senderName)){
-      sendMessage( senderName,"is not possible, your are connected!")
+    if(BdPlayerTempConnect.existSender(senderName)){
+      sendMessageByName( name,"is not possible, your are connected!")
       false
-    }else if (BdClient.nameExistsIdentities(name)) {
-      sendMessage( senderName,"There is already an user with this username!")
+    }else if (BdPlayerTempConnect.existName(name)) {
+      sendMessageByName( name,"There is already an user with this username!")
       false
     } else {
-      BdClient.addClientIdentities(name, senderName)
+      BdPlayerTempConnect.addPlayer(name,senderName,host)
       true
     }
   }
 
   //elimina los identificadores de un usuario de BdClient.
   def disconnectUser(senderName:String): Boolean ={
-    BdClient.findActiveClient(senderName)
-    BdClient.supActiveClient(senderName)
-    if (BdClient.senderExistsIdentities(senderName)) {
-      BdClient.supClientIdentities2(senderName)
-      BdClient.supActiveClient(senderName)
+    if (BdPlayerTempConnect.existSender(senderName) || ClientActive.exist(senderName)) {
+      BdPlayerTempConnect.supPlayerBySender(senderName)
+      ClientActive.supActiveClient(senderName)
       true
     } else {
-      println("not user in activeClient!")
+      println("ERROR: not user! "+senderName)
       false
     }
   }
 
-  //recive el nombre de usuario y retorna el ActorRef ligado a ese usuario.
-  def getActorRefByName(name: String): ActorRef = {
-    BdClient.findActiveClient(name)
-  }
-
   //envia un mensaje TCP/ip a un usuario.
-  def sendMessage(clientActorName: String, message: String, serverMessage: Boolean = false): Unit = {
-    val actorRef = getActorRefByName(clientActorName)
+  def sendMessageBySender(senderName: String, message: String, serverMessage: Boolean = false): Unit = {
+    val actorRef = BdPlayerTempConnect.playerActorRefBySender(senderName)
     if(actorRef != null){
       if (serverMessage) {
         actorRef ! Write(ByteString("[SERVER]: " + message))
@@ -76,12 +69,12 @@ case object Command{
         actorRef ! Write(ByteString(message))
       }
     }else{
-      println("user no found "+clientActorName)
+      println("user no found "+senderName)
     }
   }
 
-  def sendMessageName(name: String, message: String, serverMessage: Boolean = false): Unit = {
-    val actorRef = getActorRefByName(BdClient.findSenderIdentities(name))
+  def sendMessageByName(name: String, message: String, serverMessage: Boolean = false): Unit = {
+    val actorRef = BdPlayerTempConnect.playerActorRefByName(name)
     if(actorRef != null){
       if (serverMessage) {
         actorRef ! Write(ByteString("[SERVER]: " + message))
@@ -96,9 +89,9 @@ case object Command{
   //envia un mensaje TCP/ip a todos los usuarios.
   def sendToAll(messageSender: String, message: String, serverMessage: Boolean = false): Unit = {
     if (serverMessage) {
-      BdClient.allActorRef().foreach(actorRef => actorRef ! Write(ByteString("[SERVER for ALL]: " + message)))
+      BdPlayerTempConnect.allActorRef().foreach(actorRef => actorRef ! Write(ByteString("[SERVER for ALL]: " + message)))
     } else {
-      BdClient.allActorRef().foreach(actorRef => actorRef ! Write(ByteString("<" + messageSender + ">: " + message)))
+      BdPlayerTempConnect.allActorRef().foreach(actorRef => actorRef ! Write(ByteString("<" + messageSender + ">: " + message)))
     }
   }
 }

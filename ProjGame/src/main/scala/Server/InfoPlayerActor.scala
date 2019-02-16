@@ -14,7 +14,7 @@ class InfoPlayerActor extends Actor { //para usar las clase de mensajes Connecti
   def receive:Receive = {
     // en el caso de recibir una solisitud de conexion
     case InfoPlayer(name) => // buscar la informacion del jugador y enviarsela
-      sendMessageName(name,"your info 0000000000")
+      sendMessageByName(name,"your info 0000000000")
     case _ => println("huh type command?")
   }
 }
