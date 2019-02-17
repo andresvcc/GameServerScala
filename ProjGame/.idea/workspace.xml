@@ -1,69 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="principalmente agregar actor BDplayer, pero tambien he organisado varias cositas">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Server/Actor/ManagerActor.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Server/Actor/MsgBdPlayer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Server/Actor/msgLogin.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Server/BD/BdClient.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Server/BD/BdClientActive.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Server/BD/BdPlayerTempConnect.scala" afterDir="false" />
+    <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ActorBDPlayer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Actor/ActorBDPlayer.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ActorInfoPlayer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Actor/ActorInfoPlayer.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ActorLogin.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Actor/ActorLogin.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcHandler.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Actor/ActorTCPcHandler.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ActorTCPcManager.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Actor/ActorTCPcManager.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/BdClient.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/BdPlayerTempConnect.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ClientActive.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/Comunicated.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/ComunnicatedBdPlayer.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/MainLoginServer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/MainLoginServer.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/PlayerTempConnect.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/ClassPlayer/PlayerTempConnect.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcHandler$$anonfun$receive$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcManager$$anonfun$receive$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ActorTCPcManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$allActorRef$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$allActorRef$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$allHost$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$allHost$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$allName$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$$anonfun$allName$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/BdPlayerTempConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ClientActive$$anonfun$findActiveClient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ClientActive$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/ClientActive.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command$$anonfun$sendToAll$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command$$anonfun$sendToAll$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command$$anonfun$sendToAll$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command$$anonfun$sendToAll$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Connecting$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Connecting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Disconnect$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Disconnect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Greeting$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$Greeting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$InfoPlayer$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$InfoPlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$PlayerSelect$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated$PlayerSelect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/Comunicated.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/InfoPlayerActor$$anonfun$receive$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/InfoPlayerActor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginActor$$anonfun$receive$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginActor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginServer$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginServer$delayedInit$body.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/LoginServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.11/classes/Server/PlayerTempConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.11/classes/Server/PlayerTempConnect.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -122,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/Server/BD/BdPlayerTempConnect.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
               <folding>
                 <element signature="e#19#45#0" expanded="true" />
               </folding>
@@ -161,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Actor/ActorTCPcManager.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#253#286#0" expanded="true" />
@@ -173,7 +112,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ClassPlayer/PlayerTempConnect.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
+            <state relative-caret-position="88">
               <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
           </provider>
@@ -352,7 +291,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="ClassPlayer" type="462c0819:PsiDirectoryNode" />
+              <item name="BD" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjGame" type="b2602c69:ProjectViewProjectNode" />
@@ -370,7 +309,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550383667757" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550383736804" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -710,24 +649,30 @@
       <option name="project" value="LOCAL" />
       <updated>1550381167831</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="organizar todo en carpetas">
+      <created>1550383687383</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1550383687383</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
-      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.2590604" />
+      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.2590604" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="4" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="4" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.407932" />
@@ -791,7 +736,8 @@
     <MESSAGE value="acomodando algunos comentarios" />
     <MESSAGE value="creando la clase BdPlayer" />
     <MESSAGE value="principalmente agregar actor BDplayer, pero tambien he organisado varias cositas" />
-    <option name="LAST_COMMIT_MESSAGE" value="principalmente agregar actor BDplayer, pero tambien he organisado varias cositas" />
+    <MESSAGE value="organizar todo en carpetas" />
+    <option name="LAST_COMMIT_MESSAGE" value="organizar todo en carpetas" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.3.12-sources.jar!/akka/actor/dungeon/Dispatch.scala">
@@ -1089,7 +1035,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/Actor/ActorTCPcManager.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#253#286#0" expanded="true" />
@@ -1114,7 +1060,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/BD/BdPlayerTempConnect.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
           <folding>
             <element signature="e#19#45#0" expanded="true" />
           </folding>
@@ -1123,7 +1069,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Server/ClassPlayer/PlayerTempConnect.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
+        <state relative-caret-position="88">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
