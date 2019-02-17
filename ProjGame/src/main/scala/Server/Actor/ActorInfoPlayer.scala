@@ -4,13 +4,14 @@ los datos de sus personajes y avances en el juego. no esta previsto para actuali
 jugador, aunque almacena la ultima posicion del jugador si este estaba conectado y perdio su conexion.
 */
 
-package Server
+package Server.Actor
 
+import Server.Command
 import akka.actor.Actor
 
 class ActorInfoPlayer extends Actor { //para usar las clase de mensajes Connecting y Disconnect
-  import Comunicated._
   import Command._
+  import msgLogin._
   def receive:Receive = {
     // en el caso de recibir una solisitud de conexion
     case InfoPlayer(name) => // buscar la informacion del jugador y enviarsela

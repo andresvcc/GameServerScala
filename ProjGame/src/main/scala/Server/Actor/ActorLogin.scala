@@ -4,13 +4,14 @@ name: nombre de usuario
 senderName: identificador de usuario
 */
 
-package Server
-
+package Server.Actor
+import Server.BD.BdPlayerTempConnect
+import Server.Command
 import akka.actor.Actor
 
 class ActorLogin extends Actor {
-  import Command._ //para usar sus metodos sendMessage y sendToAll
-  import Comunicated._ //para usar las clase de mensajes Connecting y Disconnect
+  import Command._
+  import msgLogin._ //para usar las clase de mensajes Connecting y Disconnect
   def receive:Receive = {
     // en el caso de recibir una solisitud de conexion
     case Connecting(name,senderName,host) =>

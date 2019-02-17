@@ -6,19 +6,17 @@ para el funcionamiento de varias clases
 
 package Server
 
-import akka.actor.{ActorRef, ActorSystem, Props}
 import akka.io.Tcp.Write
 import akka.util.ByteString
+import Server.BD.BdPlayerTempConnect
+import Server.BD.BdClientActive
 
 case object Command{
   //-----------------------------------------
   // caracter usado para iniciar cualquier comando, es solo para verificar.
   val CommandCharacter = "~"
   //-----------------------------------------
-  // default Actor constructor
-  val system = ActorSystem("serverCOM")
-  val loginActor1: ActorRef = system.actorOf(Props[ActorLogin], name = "loginActor1")
-  val infoPlayerActor: ActorRef = system.actorOf(Props[ActorInfoPlayer], name = "selecPlayerActor")
+
   //-----------------------------------------
 
   //***********************************************************************************
@@ -49,9 +47,9 @@ case object Command{
 
   //elimina los identificadores de un usuario de BdClient.
   def disconnectUser(senderName:String): Boolean ={
-    if (BdPlayerTempConnect.existSender(senderName) || ClientActive.exist(senderName)) {
+    if (BdPlayerTempConnect.existSender(senderName) || BdClientActive.exist(senderName)) {
       BdPlayerTempConnect.supPlayerBySender(senderName)
-      ClientActive.supActiveClient(senderName)
+      BdClientActive.supActiveClient(senderName)
       true
     } else {
       println("ERROR: not user! "+senderName)

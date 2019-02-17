@@ -1,8 +1,8 @@
-package Server
+package Server.BD
 
 import akka.actor.ActorRef
 
-object ClientActive{
+object BdClientActive{
   private val ActiveClients = scala.collection.mutable.HashMap.empty[String, ActorRef]
 
   def addActiveClient(senderName:String, actorRef: ActorRef): Unit ={

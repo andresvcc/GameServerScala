@@ -1,9 +1,4 @@
-/*
-este objeto contiene la base de datos de los usuarios conectados,
-y los metodos que se usan para administrar esos datos.
-*/
-
-package Server
+package Server.BD
 
 import akka.actor.ActorRef
 

@@ -1,16 +1,16 @@
-package Server
+package Server.BD
 
 import akka.actor.ActorRef
+import Server.ClassPlayer.PlayerTempConnect
 
 object BdPlayerTempConnect{
-
   //diccionario de clientes activos senderName -> PlayerTempConnect
   private val playerSender = scala.collection.mutable.HashMap.empty[String, PlayerTempConnect]
   private val playerName = scala.collection.mutable.HashMap.empty[String, PlayerTempConnect]
 
   //agregar un cliente al diccionario Player
   def addPlayer(name:String, senderName:String, host:String): Boolean ={
-    val actorRef:ActorRef = ClientActive.findActiveClient(senderName)
+    val actorRef:ActorRef = BdClientActive.findActiveClient(senderName)
     val playerTempConnect = new PlayerTempConnect(name,senderName,host, actorRef)
     playerSender += (senderName -> playerTempConnect )
     playerName += (name -> playerTempConnect )

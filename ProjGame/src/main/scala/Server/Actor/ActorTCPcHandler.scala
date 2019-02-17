@@ -3,14 +3,17 @@ este modelo de actor recibe los mensajes se el usuario al que sirve a fin de
 ejecutar sus comandos
 */
 
-package Server
+package Server.Actor
 
+import Server.Command
 import akka.actor.Actor
 import akka.io.Tcp.{ConnectionClosed, Received}
+import Server.BD.BdPlayerTempConnect
 
 class ActorTCPcHandler(host:String) extends Actor {
-  import Command._ // para usar los metodos getCommand, sendMessage
-  import Comunicated._// para usar las clases de mensaje Connecting y Disconnect
+  import Command._
+  import ManagerActor._
+  import msgLogin._// para usar las clases de mensaje Connecting y Disconnect
 
   override def receive: Actor.Receive = {
     case Received(data) =>

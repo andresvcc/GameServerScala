@@ -1,11 +1,14 @@
-package Server
+package Server.Actor
 
+import Server.Command
 import akka.actor.Actor
 
+
 class ActorBDPlayer extends Actor { //para usar las clase de mensajes Connecting y Disconnect
-  import BdPlayerTempConnect._
+  import Server.BD.BdPlayerTempConnect._
+  import MsgBdPlayer._
   import Command._
-  import ComunnicatedBdPlayer._
+
   def receive:Receive = {
     case AddPlayer(name, senderName, host) =>
       if(addPlayer(name, senderName, host))

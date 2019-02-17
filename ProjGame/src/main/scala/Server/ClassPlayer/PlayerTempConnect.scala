@@ -1,4 +1,4 @@
-package Server
+package Server.ClassPlayer
 
 import akka.actor.ActorRef
 

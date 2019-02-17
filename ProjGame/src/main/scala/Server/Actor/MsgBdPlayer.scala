@@ -1,6 +1,6 @@
-package Server
+package Server.Actor
 
-case object ComunnicatedBdPlayer{
+case object MsgBdPlayer{
   case class AddPlayer(name:String, senderName:String, host:String)
   case class SupPlayerBySender(senderName:String)
   case class SupPlayerByName(name:String)

@@ -10,7 +10,7 @@ object MainLoginServer extends App {
   //declaracion por defecto del systema de actores akka
   val system = ActorSystem()
   //instanciar un actor para la gestion de la comunicacion TCP/ip
-  val tcpserver = system.actorOf(Props(classOf[ActorTCPcManager], "localhost", 8080))
+  val tcpserver = system.actorOf(Props(classOf[Actor.ActorTCPcManager], "localhost", 8080))
 }
 
 
