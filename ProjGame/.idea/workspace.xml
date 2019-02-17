@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eec2a37a-f2d4-4d00-9eb0-9b9215959790" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Server/ActorBDPlayer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Server/ComunnicatedBdPlayer.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/BdPlayerTempConnect.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/BdPlayerTempConnect.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/Command.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/InfoPlayerActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/ActorInfoPlayer.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/LoginActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/ActorLogin.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/LoginServer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/MainLoginServer.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Server/PlayerTempConnect.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Server/PlayerTempConnect.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -281,7 +273,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550379186836" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550381209883" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -614,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550348070721</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="principalmente agregar actor BDplayer, pero tambien he organisado varias cositas">
+      <created>1550381167831</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1550381167831</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -624,7 +623,7 @@
       <window_info id="Capture Tool" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.2590604" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.2590604" />
       <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="1" />
@@ -633,7 +632,7 @@
       <window_info anchor="bottom" id="Messages" order="4" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.407932" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.407932" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39943343" />
       <window_info anchor="bottom" id="Build" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
@@ -664,7 +663,8 @@
     <MESSAGE value="agregando el comando ~info, un actor para buscar la informacion y el mensaje InfoPlayer" />
     <MESSAGE value="acomodando algunos comentarios" />
     <MESSAGE value="creando la clase BdPlayer" />
-    <option name="LAST_COMMIT_MESSAGE" value="creando la clase BdPlayer" />
+    <MESSAGE value="principalmente agregar actor BDplayer, pero tambien he organisado varias cositas" />
+    <option name="LAST_COMMIT_MESSAGE" value="principalmente agregar actor BDplayer, pero tambien he organisado varias cositas" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/srcs/akka-actor_2.11-2.3.12-sources.jar!/akka/actor/dungeon/ReceiveTimeout.scala">
