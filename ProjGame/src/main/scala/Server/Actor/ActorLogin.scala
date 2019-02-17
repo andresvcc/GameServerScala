@@ -3,30 +3,25 @@ este modelo de actor gestiona el login entre el usuario y el server
 name: nombre de usuario
 senderName: identificador de usuario
 */
-
 package Server.Actor
-import Server.BD.BdPlayerTempConnect
-import Server.Command
+import Server.Actor.ManagerActor.{bdPlayerActor, infoPlayerActor, infoServerActor, infoServerStatusActor}
 import akka.actor.Actor
 
 class ActorLogin extends Actor {
-  import Command._
-  import msgLogin._ //para usar las clase de mensajes Connecting y Disconnect
+
+  import MsgBdPlayer._
+  import msgLogin._
   def receive:Receive = {
-    // en el caso de recibir una solisitud de conexion
+    case LoginClient(name) =>
+      infoServerActor ! InfoServerConnexion(name)
+      infoServerStatusActor ! InfoServerStatus(name)
+      infoPlayerActor ! InfoPlayer(name)
     case Connecting(name,senderName,host) =>
-      if(connectingUser(name, senderName,host)){
-        println("#login User Name:" + name +" -> userID"+ senderName)
-        sendMessageBySender(senderName,"you are is now connected\n",serverMessage = true)
-        sendToAll("", name+" is connected", serverMessage = true)
-      }
-    // en el caso de perder la conexion, se suprime de la lista de usuarios conectados
+      bdPlayerActor ! AddPlayer(name, senderName, host)
     case Disconnect(senderName)=>
-      val name = BdPlayerTempConnect.playerNameBySender(senderName)
-      if(disconnectUser(senderName)){
-        println("User Disconnect: "+name+": "+ senderName)
-        sendToAll("", name+" is disconnect§", serverMessage = true)
-      }
-    case _ => println("huh type command?")
+      bdPlayerActor ! SupPlayerBySender(senderName)
+    case InfoPlayerError(senderName, textError)=>
+      infoPlayerActor ! InfoPlayerError(senderName,textError)
+    case _ => println("LoginClient huh type command? :"+receive)
   }
 }

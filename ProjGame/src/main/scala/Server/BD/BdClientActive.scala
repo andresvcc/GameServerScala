@@ -5,6 +5,10 @@ import akka.actor.ActorRef
 object BdClientActive{
   private val ActiveClients = scala.collection.mutable.HashMap.empty[String, ActorRef]
 
+  def actorRef(senderName:String): ActorRef ={
+    ActiveClients.getOrElse(senderName, null)
+  }
+
   def addActiveClient(senderName:String, actorRef: ActorRef): Unit ={
     ActiveClients += (senderName -> actorRef)
   }

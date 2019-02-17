@@ -12,13 +12,8 @@ import Server.BD.BdPlayerTempConnect
 import Server.BD.BdClientActive
 
 case object Command{
-  //-----------------------------------------
   // caracter usado para iniciar cualquier comando, es solo para verificar.
   val CommandCharacter = "~"
-  //-----------------------------------------
-
-  //-----------------------------------------
-
   //***********************************************************************************
   //extrae el comando de una linea de string Ex: ~login andres -> return ~login.
   def getCommand(command:String):Array[String] = {
@@ -32,7 +27,6 @@ case object Command{
 
   //ayade los identificadores de un usuario a BdClient.
   def connectingUser(name:String, senderName:String, host:String): Boolean ={
-
     if(BdPlayerTempConnect.existSender(senderName)){
       sendMessageByName( name,"is not possible, your are connected!")
       false
@@ -59,7 +53,7 @@ case object Command{
 
   //envia un mensaje TCP/ip a un usuario.
   def sendMessageBySender(senderName: String, message: String, serverMessage: Boolean = false): Unit = {
-    val actorRef = BdPlayerTempConnect.playerActorRefBySender(senderName)
+    val actorRef = BdClientActive.actorRef(senderName)
     if(actorRef != null){
       if (serverMessage) {
         actorRef ! Write(ByteString("[SERVER]: " + message))

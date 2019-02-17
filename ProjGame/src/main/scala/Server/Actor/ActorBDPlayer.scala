@@ -1,20 +1,29 @@
 package Server.Actor
 
-import Server.Command
+import Server.Actor.ManagerActor.{loginActor,infoPlayerActor}
+import Server.Actor.MsgBdPlayer._
+import Server.Actor.msgLogin.{InfoPlayerError, LoginClient}
+import Server.BD.BdPlayerTempConnect._
 import akka.actor.Actor
 
-
 class ActorBDPlayer extends Actor { //para usar las clase de mensajes Connecting y Disconnect
-  import Server.BD.BdPlayerTempConnect._
-  import MsgBdPlayer._
-  import Command._
-
   def receive:Receive = {
     case AddPlayer(name, senderName, host) =>
-      if(addPlayer(name, senderName, host))
-        sendMessageByName(name,"Addplayer: "+name+" OK")
-      else
-        sendMessageByName(name,"Addplayer: "+name+" Failure")
+      val (senderExist, nameExist) = addPlayer(name, senderName, host)
+      (senderExist,nameExist) match {
+        case (false,false) =>
+          loginActor ! LoginClient(name)
+          println("registro de clienteID:"+senderName+" <"+name+"> exitoso")
+        case (true,true) =>
+          infoPlayerActor ! InfoPlayerError(senderName, "ya esta conectado en clienteID:"+senderName+" pero intenta reconectar <"+name+">")
+          println("ya esta conectado en clienteID:"+senderName+" pero intenta reconectar <"+name+">")
+        case (true,false) =>
+          infoPlayerActor ! InfoPlayerError(senderName, "intento de conectar dos o mas cuentas clienteID:"+senderName+" <"+name+">")
+          println("intento de conectar dos o mas cuentas clienteID:"+senderName+" <"+name+">")
+        case (false,true) =>
+          infoPlayerActor ! InfoPlayerError(senderName, "intento de reconexion de una cuenta")
+            println("intento de reconexion de una cuenta")
+      }
     case SupPlayerBySender(senderName) =>
       if(supPlayerBySender(senderName))
         println("sup Player: "+senderName+" OK")
@@ -49,6 +58,17 @@ class ActorBDPlayer extends Actor { //para usar las clase de mensajes Connecting
       allActorRef()
     case AllHost =>
       allHost()
-    case _ => println("huh type command?")
+    case PlayerRequestBD(actorRef,selectR,request, argument, senderName) =>
+      println("base de datos recibe requete de "+actorRef)
+      request match {
+        case "playerNameBySender" =>
+          actorRef ! PongBD(selectR,playerNameBySender(senderName), senderName)
+          println("se envio respuesta a "+actorRef)
+        case _ =>
+          actorRef ! "null"
+          println("BD no puede enviar respuesta porque actorRef es null")
+      }
+
+    case _ => println("ActorBdPlayer huh type command?"+sender()+" : "+receive)
   }
 }
