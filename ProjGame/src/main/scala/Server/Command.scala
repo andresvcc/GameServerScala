@@ -17,8 +17,8 @@ case object Command{
   //-----------------------------------------
   // default Actor constructor
   val system = ActorSystem("serverCOM")
-  val loginActor1: ActorRef = system.actorOf(Props[LoginActor], name = "loginActor1")
-  val infoPlayerActor: ActorRef = system.actorOf(Props[InfoPlayerActor], name = "selecPlayerActor")
+  val loginActor1: ActorRef = system.actorOf(Props[ActorLogin], name = "loginActor1")
+  val infoPlayerActor: ActorRef = system.actorOf(Props[ActorInfoPlayer], name = "selecPlayerActor")
   //-----------------------------------------
 
   //***********************************************************************************

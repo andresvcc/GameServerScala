@@ -8,7 +8,7 @@ package Server
 
 import akka.actor.Actor
 
-class LoginActor extends Actor {
+class ActorLogin extends Actor {
   import Command._ //para usar sus metodos sendMessage y sendToAll
   import Comunicated._ //para usar las clase de mensajes Connecting y Disconnect
   def receive:Receive = {

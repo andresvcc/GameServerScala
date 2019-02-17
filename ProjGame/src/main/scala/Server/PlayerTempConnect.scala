@@ -6,8 +6,8 @@ class PlayerTempConnect(aName:String, aSenderName:String, aHost:String, aActorRe
   private val accountName:String = aName
   private val tempSenderName:String = aSenderName
   private val tempHostConnection:String = aHost
-  //private val temporaryConnectionKey:TempKey = generateKey()
   val actorRef:ActorRef = aActorRef
+  //private val temporaryConnectionKey:TempKey = generateKey()
 
   def name:String = accountName
   def senderName:String = tempSenderName

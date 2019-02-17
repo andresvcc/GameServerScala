@@ -8,7 +8,7 @@ package Server
 
 import akka.actor.Actor
 
-class InfoPlayerActor extends Actor { //para usar las clase de mensajes Connecting y Disconnect
+class ActorInfoPlayer extends Actor { //para usar las clase de mensajes Connecting y Disconnect
   import Comunicated._
   import Command._
   def receive:Receive = {

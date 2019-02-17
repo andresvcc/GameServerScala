@@ -6,7 +6,7 @@ package Server
 
 import akka.actor.{ActorSystem, Props}
 
-object LoginServer extends App {
+object MainLoginServer extends App {
   //declaracion por defecto del systema de actores akka
   val system = ActorSystem()
   //instanciar un actor para la gestion de la comunicacion TCP/ip

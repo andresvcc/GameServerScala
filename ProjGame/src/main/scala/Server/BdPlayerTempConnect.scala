@@ -9,23 +9,28 @@ object BdPlayerTempConnect{
   private val playerName = scala.collection.mutable.HashMap.empty[String, PlayerTempConnect]
 
   //agregar un cliente al diccionario Player
-  def addPlayer(name:String, senderName:String, host:String): Unit ={
+  def addPlayer(name:String, senderName:String, host:String): Boolean ={
     val actorRef:ActorRef = ClientActive.findActiveClient(senderName)
     val playerTempConnect = new PlayerTempConnect(name,senderName,host, actorRef)
     playerSender += (senderName -> playerTempConnect )
     playerName += (name -> playerTempConnect )
+    existName(name)
   }
 
   //suprimir un cliente del diccionario Player
-  def supPlayerBySender(senderName:String): Unit ={
+  def supPlayerBySender(senderName:String): Boolean ={
     playerName -= playerSender(senderName).name
     playerSender -= senderName
+    if(existSender(senderName)) false
+    else true
   }
 
   //suprimir un cliente del diccionario Player
-  def supPlayerByName(senderName:String): Unit ={
-    playerName -= playerSender(senderName).name
-    playerSender -= senderName
+  def supPlayerByName(name:String): Boolean ={
+    playerSender -= playerName(name).senderName
+    playerName -= name
+    if(existName(name)) false
+    else true
   }
 
   //retorna el nombre de un Player
